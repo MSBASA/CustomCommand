@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Addin Type="Standard">
+  <ClassId>{140918FF-668A-435a-BD5E-57EF81CA5C5D}</ClassId>
+  <ClientId>{140918FF-668A-435a-BD5E-57EF81CA5C5D}</ClientId>
+  <DisplayName>CustomCommand</DisplayName>
+  <Description>Autodesk Inventor CustomCommand SDK sample</Description>
+  <Assembly>CustomCommand.dll</Assembly>
+  <SupportedSoftwareVersionGreaterThan>17..</SupportedSoftwareVersionGreaterThan>
+  <LoadOnStartUp>1</LoadOnStartUp>
+  <Hidden>0</Hidden>
+</Addin>

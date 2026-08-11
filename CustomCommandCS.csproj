@@ -149,5 +149,11 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <ApplicationManifest>CustomCommand.manifest</ApplicationManifest>
+    <InventorAddInDirectory>$(APPDATA)\Autodesk\Inventor 2024\Addins\CustomCommand</InventorAddInDirectory>
   </PropertyGroup>
+  <Target Name="DeployInventorAddIn" AfterTargets="Build">
+    <MakeDir Directories="$(InventorAddInDirectory)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(InventorAddInDirectory)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\CustomCommand.Inventor.addin" DestinationFolder="$(InventorAddInDirectory)" />
+  </Target>
 </Project>
